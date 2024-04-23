@@ -1,0 +1,96 @@
+:root{
+    --fundo: #FFF2E7;
+    --marrom-claro  :#B99577;
+    --fundo-secundario: #FCEBDD;
+    --textos-primario: #564435;
+    --verde-claro: #98A98E;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 4% 1fr;
+    background-color: var(--fundo);
+    height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-rows:  10% 1fr 16%;
+    padding: 6vh 6vw;
+    font-family: "Noto Sans Khmer", sans-serif;
+    color: var(--textos-primario);
+}
+
+header{
+    display: flex;
+    color: var(--marrom-claro);
+    font-family: "Langar", system-ui;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.linha-lateral{
+    background-color: var(--verde-claro);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input-container{
+    border: solid 3px var(--verde-claro);
+    border-radius: 10px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 5%;
+    align-content: center;
+    justify-items: center;
+    color: var(--textos-primario);
+}
+
+.input-container textarea{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    resize: none;
+    width: 96%;
+}
+
+.container-respostas{
+    padding: 32px 0;
+}
+
+.resposta{
+    width: 40vw;
+    display: grid;
+    grid-template-rows: 14% 1fr;
+}
+.idiomas{
+    display: flex;
+}
+.idiomas button{
+    color: var(--textos-primario);
+    background-color: var(--fundo-secundario);
+    border: solid 2px var(--verde-claro);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.texto-resposta{
+    white-space: pre-line;
+    width: 40vw;
+    padding: 24px;
+    background-color: var(--fundo-secundario);
+    border: solid 2px var(--verde-claro);
+    border-radius: 12px;
+    border-top-left-radius: 0;
+}
+

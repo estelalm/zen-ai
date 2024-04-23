@@ -1,0 +1,88 @@
+:root{
+    --fundo: #FFF2E7;
+    --marrom-claro  :#E8C5A7;
+    --fundo-secundario: #FFF2E7;
+    --textos-primario: #564435;
+    --verde-claro: #98A98E;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fundo);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+}
+
+header, footer{
+    background-color: var(--verde-claro);
+}
+
+main{
+    background-image: url(../img/background-maiorbackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 6vh 16vw;
+}
+h1{
+    color: var(--verde-claro);
+    font-family: "Langar", system-ui;
+    font-size: 5.5vw;
+    width: 20vw;
+    text-align: center;
+}
+.login{
+    font-family: "Noto Sans Khmer", sans-serif;
+    color: var(--textos-primario);
+    background-color: var(--fundo-secundario);
+    border: solid 2px --verde-claro;
+    width: 20vw;
+    height: 34vh;
+    padding: 16px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    border: solid 2px var(--verde-claro);
+    grid-template-rows: 41% 41% 18%;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    font-size: 1.2rem;
+}
+.login input{
+    width: 16vw;
+    border-radius: 10px;
+    border: solid 2px var(--verde-claro);
+    background-color: var(--fundo-secundario);
+    height: 50%;
+    padding: 16px;
+    outline: none;
+    font-family: "Noto Sans Khmer", sans-serif;
+    color: var(--textos-primario);
+    font-size: 1.2rem;
+}
+.login input:focus{
+    border: solid 3px var(--verde-claro);
+}
+
+button{
+    background-color: var(--verde-claro);
+    border-radius: 10px;
+    border: none;
+    font-size: 1.4rem;
+}
+
