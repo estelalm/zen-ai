@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Langar&family=Noto+Sans+Khmer:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
-    <script src="../js/home.js"></script>
+    <script src="../js/home.js" type="module" defer></script>
     <title>Zen-AI</title>
 </head>
 <body>
@@ -17,27 +17,23 @@
             <h2>ZEN-AI</h2>
             <img src="../img/simbol.png" alt="">
         </header>
-        <div class="container-respostas">
+        <div class="container-respostas" id="container-respostas">
             <div class="resposta">
                 <div class="idiomas">
-                    <button>PORTUGUÊS</button>
-                    <button>ENGLISH</button>
+                    <button id="portugues">PORTUGUÊS</button>
+                    <button id="ingles">ENGLISH</button>
                 </div>
-                <p class="texto-resposta">
-                    Zen-Ai é ...................  ......... ................................ ............. ......... .......... ..........  ........................................................................
-                    ............................................. ........................................... . .......... .....................
-                    .......................  ......... ............... ...... .......... .........................................................
-                    ........... ............................  ........................... ......................................................
-                    .......................................................... ..............................................................
-                    .....  ...................................................................................................................
-                    ..................... ........................... ...... .................. ...............................................
-                    ..........
+                <p class="texto-resposta " id="textPt">
+                    
+                </p>
+                <p class="texto-resposta hidden" id="textEng">
+                   
                 </p>
             </div>
         </div>
         <div class="input-container">
             <textarea id="user-input"></textarea>
-            <img src="../img/send.svg" alt="">
+            <img src="../img/send.svg" alt="" id="enviar">
         </div>
     </main>
 </body>
