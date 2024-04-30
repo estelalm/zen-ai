@@ -4,7 +4,7 @@ const botaoLogar = document.getElementById('botao-logar')
 
 const getUsers = async () =>{
 
-    const url = 'http://localhost:3000/users'
+    const url = 'https://back-login.vercel.app/usuarios'
     const response = await fetch(url)
     const usuarios = await response.json()
 
