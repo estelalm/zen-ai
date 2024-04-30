@@ -11,17 +11,16 @@ const botaoIngles = document.getElementById('ingles')
 const textoPortugues = document.getElementById('textPt')
 const textoIngles = document.getElementById('textEng')
 
-const criarResposta = async () =>{
+const loader = document.getElementById('load')
+//esconder coisa de carregamento
+const showLoad = () =>{
 
-    const containerRespostas = document.getElementById('container-respostas')
-
-    const containerResposta = document.createElement('div')
-    containerResposta.classList.add('resposta')
+}
+const hideLoad = () =>{
 
 }
 
 const consultaGemini = async (question) =>{
-
 
 
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=' + keyGoogle;

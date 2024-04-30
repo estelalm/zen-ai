@@ -2,6 +2,7 @@
 
 
 export async function translate (text) {
+
     let endpoint = `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=pt&to=en`
         const options = {
             method: "POST",
