@@ -2,16 +2,19 @@
 
 const botaoLogar = document.getElementById('botao-logar')
 
+const getUsers = async () =>{
 
-const usuarios = [
-    {
-        id: 1,
-        username: "xXuserXx",
-        senha: "senha"
-    }
-]
+    const url = 'http://localhost:3000/users'
+    const response = await fetch(url)
+    const usuarios = await response.json()
 
-const logar = () =>{
+    return usuarios
+}
+
+
+const logar = async () =>{
+
+    const usuarios = await getUsers()
 
     const inputUser = document.getElementById('user')
     const inputSenha = document.getElementById('senha')
