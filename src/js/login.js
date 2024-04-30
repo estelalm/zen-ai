@@ -23,7 +23,7 @@ const logar = async () =>{
         alert('preencha todos os campos')
     }else{
     usuarios.forEach(usuario =>{
-        if(usuario.username == inputUser.value.replace(" ", "") && usuario.senha == inputSenha.value.replace(" ", "")){
+        if(usuario.email == inputUser.value.replace(" ", "") && usuario.senha == inputSenha.value.replace(" ", "")){
             window.location.assign('./src/pages/home.html')
         }else{
             alert("usuario ou senha incorretos")
