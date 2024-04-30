@@ -22,13 +22,21 @@ const logar = async () =>{
     if(inputSenha.value == "" || inputUser.value == ""){
         alert('preencha todos os campos')
     }else{
+        let validateStatus = false
     usuarios.forEach(usuario =>{
         if(usuario.email == inputUser.value.replace(" ", "") && usuario.senha == inputSenha.value.replace(" ", "")){
-            window.location.assign('./src/pages/home.html')
-        }else{
-            alert("usuario ou senha incorretos")
+            validateStatus = true
+            let userId = usuario.id
+
+            localStorage.setItem('userId', userId)
         }
     })
+
+    if(validateStatus){
+        window.location.assign('./src/pages/home.html')
+    }else{
+        alert('Usuário ou senha incorretos')
+    }
     }
 
 }
